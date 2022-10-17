@@ -1,9 +1,206 @@
 {% extends "mainapp/base.html" %}
-
+{% load static %}
 {% block content %}
+<header>
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
 
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="{% static 'images/720p.mp4' %}" type="video/mp4">
+    </video>
 
+    <!-- The header content -->
+    <div class="container h-100">
+        <div class="d-flex h-100 text-left align-items-center">
+            <div class="w-75 text-white">
+                <h1 class="display-5" style="font-weight: bold;font-size:40px;line-height: 48px;">Learn and grow with the help 
+                    from world-class mentors for free.</h1>
+                <p class="lead mb-0" style="font-size:22px;line-height:30px;">Create a stellar experience and enjoy what we have to offer.</p>
+                <div style="height:40px;"></div>
+                <a href="{% url 'mainapp:contact' %}" style="text-decoration:none;">
+                    <button class="getintouch-button" style="background-color:#CC3E18;">
+                        <span class="getintouch-text">Get in touch - it's free</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div style="background-color: #EF8366;">
+    <div class=" py-5">
+        <h3 class="text-center text-white" style="font-weight:bold;">WE ARE DOING THIS AND THAT FOR THEM</h3>
+        <p class="text-center pt-3 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+</div>
+<br><br>
+<div class="container py-5">
+    <div class="row d-flex align-items-center">
+        <div class="col-md-5">
+            <img src="{% static 'images/orange-burst.png' %}" class="img-fluid">
+            <div class="d-flex justify-content-center">
+                <p style="font-size:100px;line-height:120px;font-weight: 500;">We're with you.</p>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <p style="font-size: 24px; line-height:36px;font-weight: 500;">
+                Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here.
+            </p>
+            <p style="font-size: 24px; line-height:36px;font-weight: 500;">
+                Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here.
+            </p>
+        </div>
+    </div>
+</div>
+<div style="background:url(../../static/images/shape-25.png);background-repeat: repeat;">
+    <h3 class="text-center about-banner-text2" style="color:#000;">Focus Areas</h3>
+    <div class="container py-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/home-volunteers.png' %}" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text-center programs-text">Volunteer Services</p>
+                <p class="pt-3">
+                    The OBC volunteer program was created in honor of the Late Engineer Okore Booker Charles . This program has been carefully curated to 
+                    reflect and inculcate the values that he lived by throughout his life in community service and social impact. 
+                </p>
+                <p>
+                    The OBC volunteer program will help you render assistance to underprivileged and underserved communities where you will experience 
+                    traditional cultures and even get a chance to interact with rich wildlife all while supporting a good cause and creating a positive impact in the society.
+                </p>
+                <center>
+                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                        <span class="signin-text">Learn More</span>
+                    </button>
+                </center>
+            </div>
+        </div>
+        <br><br>
+        <div class="row pt-5 d-flex align-items-center">
+            <div class="col-md-6">
+                <p class="text-center programs-text">Strategic Planning, Coordination & Monitoring</p>
+                <p>
+                    We help you to build action oriented strategic plans, communication, business development, marketing and partnership strategies, internal policies and 
+                    customer experience needs in the following industry categories and sectors: 
+                </p>
+                <p>
+                    SMEs, FMCG, Consulting firms, INGOs, not for profit organizations including CBOs, CSOs, FBOs, civil societies, government, academic institutions and individuals..
+                </p>
+                <center>
+                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                        <span class="signin-text">Learn More</span>
+                    </button>
+                </center>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/home-volunteers.png' %}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row pt-5 d-flex align-items-center">
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/home-volunteers.png' %}" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text-center programs-text">Project Management</p>
+                <p class="pt-3">
+                    We are the  first choice custodians of your projects and resources on ground. We source for quality and competitive resource plans, quotations, unique development 
+                    plans and bespoke designs that are fairly priced and work with reputable excerpts to execute your vision and deliver beyond the expected outcomes. 
+                </p>
+                <p>
+                    Our areas of focus include: research, digitization, real estate & construction, corporate events (workshops and employee development programs), 
+                    budgeting exercises and project fundraising initiatives.
+                </p>
+                <center>
+                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                        <span class="signin-text">Learn More</span>
+                    </button>
+                </center>
+            </div>
+        </div>
+        <br><br>
+        <div class="row pt-5 d-flex align-items-center">
+            <div class="col-md-6">
+                <p class="text-center programs-text">Workshops & Training</p>
+                <p class="pt-3">
+                    We design, recruit, facilitate, assess, tailormake and report on extra ordinary workshops, team building  and training initiatives for 
+                    teams and organizations. Our primary focus is on: 
+                </p>
+                <p>
+                    a) Management i.e crisis management, change management, conflict management and overall team management.
+                </p>
+                <p>
+                    b)  Leadership i.e adaptable leadership, progressive organization culture, next level leadership, performance 
+                    (financial & operational) and decision making analysis & design)
+                </p>
+                <center>
+                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                        <span class="signin-text">Learn More</span>
+                    </button>
+                </center>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/home-volunteers.png' %}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row pt-5 d-flex align-items-center">
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/home-volunteers.png' %}" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text-center programs-text">Career Counselling</p>
+                <p class="pt-3">
+                    We walk with you the journey to discovering what sets your soul on fire professionally. 
+                </p>
+                <p>
+                    We help you develop skills that support your professional vision and ad-ons aimed at 
+                    realizing your professional goals such as communication, ethics, personal presentation & profiling, 
+                    international opportunities search criteria, preparation for the next level, value brnding per work outcome, 
+                    knowing when to leave and winning negotiation skills for contracts.
+                </p>
+                <center>
+                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                        <span class="signin-text">Learn More</span>
+                    </button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>
+
+<div style="background-color: #F7F7F7;">
+    <br><br><br>
+    <div class="container py-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-5">
+                <p style="font-size:70px;line-height:90px;font-weight: 500;">Helping you chart the best course.</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <p style="font-size: 24px; line-height:41px;font-weight: 500;">
+                    Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here.
+                </p>
+                <p style="font-size: 24px; line-height:41px;font-weight: 500;">
+                    Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</div>
 {% include "mainapp/footer.html" %}
-<br><br><br>
-{% include "mainapp/footer-alt.html" %}
 {% endblock content %}

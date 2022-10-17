@@ -2,7 +2,7 @@
 <style>
 
 </style>
-<nav class="navbar navbar-expand-lg bg-light p-2">
+<nav class="navbar navbar-expand-lg bg-white fixed-top py-2">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="{% static 'images/elandomelogo.png' %}" alt="elandome logo" style="height:50px;width:auto"/>
@@ -14,10 +14,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link px-2 px-2  navlinkbold" aria-current="page" href="#">Home</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link px-2 navlinkbold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link px-2 navlinkbold dropdown-toggle {{active}}" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Who We Are
                     </a>
