@@ -5,10 +5,9 @@
                 <div class="col-3  mb-3">
                     <p class="footer-title">ABOUT US</h5>
                     <div class="pt-3">
-                        <p class="footer-text">Contact Us</p>
-                        <p class="footer-text">How we're run</p>
-                        <p class="footer-text">Finances and Pay</p>
-                        <p class="footer-text">Structure and People</p>
+                        <p class="footer-text"><a href="{% url 'mainapp:contact' %}" style="color:#fff;text-decoration:none">Contact Us</a></p>
+                        <p class="footer-text"><a href="{% url 'mainapp:services' %}" style="color:#fff;text-decoration:none"></a>How we run</p>
+                        <p class="footer-text"><a href="{% url 'mainapp:about' %}" style="color:#fff;text-decoration:none">Structure and People</a></p>
                     </div>
                 </div>
 
@@ -25,9 +24,9 @@
                 <div class="col-3  mb-3">
                     <p class="footer-title">GET INVOLVED</h5>
                     <div class="pt-3">
-                        <p class="footer-text">Join</p>
+                        <p class="footer-text"><a href="" style="color:#fff;text-decoration:none;">Join</a></p>
                         <p class="footer-text">Take Action</p>
-                        <p class="footer-text">Volunteer</p>
+                        <p class="footer-text"><a href="{% url 'mainapp:contact' %}"></a>Volunteer with Us</p>
                     </div>
                 </div>
 
@@ -42,7 +41,6 @@
             </div>
             <p class="footer-title">WORK WITH US</p>
             <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p class="footer-bottom-text">Copyright © 2022 | Privacy Policy</p>
                 <ul class="list-unstyled d-flex">

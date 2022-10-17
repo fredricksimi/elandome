@@ -14,16 +14,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link px-2 px-2 active navlinkbold" aria-current="page" href="#">Home</a>
+                    <a class="nav-link px-2 px-2  navlinkbold" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-2 navlinkbold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Who We Are
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'mainapp:about' %}">About Us</a></li>
+                        <li><a class="dropdown-item" href="{% url 'mainapp:history' %}">Our History</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2 navlinkbold" href="#">About</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:services' %}">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2 navlinkbold" href="#">Services</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:portfolio' %}">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2 navlinkbold" href="#">Contact</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:programs' %}">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:contact' %}">Contact</a>
                 </li>
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -42,14 +55,17 @@
                 <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
                 </li> -->
-            </ul>
-            <button class="signin-button me-2 gap">
-                <span class="signin-text pb-2">Sign in</span>
-            </button>
-            <button class="getintouch-button">
-                <span class="getintouch-text">Get in touch - it's free</span>
-            </button>
-            
+            </ul>&nbsp;&nbsp;
+            <a href="{% url 'mainapp:volunteer-application' %}">
+                <button class="signin-button me-2 gap">
+                    <span class="signin-text pb-2">Join Us</span>
+                </button>
+            </a>
+            <a href="{% url 'mainapp:contact' %}">
+                <button class="getintouch-button">
+                    <span class="getintouch-text">Get in touch - it's free</span>
+                </button>
+            </a>
         </div>
     </div>
 </nav>
