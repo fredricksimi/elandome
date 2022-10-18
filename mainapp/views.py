@@ -1,5 +1,6 @@
 from django.shortcuts import render
-
+from .forms import ContactPageForm, VolunteerApplicationForm
+from datetime import datetime, timezone
 # Create your views here.
 
 def home_view(request):
@@ -16,8 +17,17 @@ def history_view(request):
     return render(request, 'mainapp/history.html')
 
 def contact_view(request):
+    if request.method == 'POST':
+        form = ContactPageForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+    else:
+        form = ContactPageForm()
     active = 'active'
-    context = {'active':active}
+    context = {
+        'active':active,
+        'form':form
+        }
     return render(request, 'mainapp/contact.html', context)
 
 def portfolio_view(request):
@@ -39,6 +49,15 @@ def services_view(request):
     return render(request, 'mainapp/services.html', context)
 
 def volunteer_application_view(request):
+    if request.method == 'POST':
+        form = VolunteerApplicationForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+    else:
+        form = VolunteerApplicationForm()
     active = 'active'
-    context = {'active':active}
+    context = {
+        'active':active,
+        'form':form
+    }
     return render(request, 'mainapp/volunteer-application.html', context)

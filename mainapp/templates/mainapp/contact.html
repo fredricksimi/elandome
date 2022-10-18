@@ -1,6 +1,6 @@
 {% extends "mainapp/base.html" %}
 {% load static %}
-
+{% load crispy_forms_tags %}
 {% block content %}
 <p class="text-center contact-us-title">Contact Us</p>
 <div class="container">
@@ -11,23 +11,23 @@
                     <div class="row pt-4 pb-2">
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">FULL NAME</label>
-                            <input type="text" class="form-control" placeholder="Full name" aria-label="Full name">
+                            {{form.full_name|as_crispy_field}}
                         </div>
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
-                            <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                            {{form.email|as_crispy_field}}
                         </div>
                     </div>
                     <div class="row pt-4 pb-2">
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">SUBJECT</label>
-                            <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
+                            {{form.subject|as_crispy_field}}
                         </div>
                     </div>
                     <div class="row pt-4 pb-2">
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">MESSAGE</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+                            {{form.message|as_crispy_field}}
                         </div>
                     </div>
                     <div class="pt-4">
