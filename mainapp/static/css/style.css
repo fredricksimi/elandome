@@ -159,10 +159,10 @@ border-radius: 24px;
 }
 
 .about-us-bottom-button-text{
-    width: 69px;
+    /* width: 69px; */
 height: 20px;
 
-font-family: 'Roboto';
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -462,6 +462,9 @@ color: #014F42;
 }
 .contact-us-form-div label {
     color: #fff;
+}
+.contact-us-form-div textarea {
+    background: #fff;
 }
 .contact-us-form-div-button {
     width: 166px;
