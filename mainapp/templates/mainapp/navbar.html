@@ -13,30 +13,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link px-2 navlinkbold {{active}}" aria-current="page" href="{% url 'mainapp:home' %}">Home</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" aria-current="page" href="{% url 'mainapp:home' %}">{% trans "Home" %}</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link px-2 navlinkbold dropdown-toggle {{active}}" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Who We Are
+                        {% trans "Who We Are" %}
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{% url 'mainapp:about' %}">About Us</a></li>
-                        <li><a class="dropdown-item" href="{% url 'mainapp:history' %}">Our History</a></li>
-                        <li><a class="dropdown-item" href="{% url 'mainapp:edc-community' %}">EDC Community</a></li>
+                        <li><a class="dropdown-item" href="{% url 'mainapp:about' %}">{% trans "About Us" %}</a></li>
+                        <li><a class="dropdown-item" href="{% url 'mainapp:history' %}">{% trans "Our History" %}</a></li>
+                        <li><a class="dropdown-item" href="{% url 'mainapp:edc-community' %}">{% trans "EDC Community" %}</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:services' %}">Services</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:services' %}">{% trans "Services" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:portfolio' %}">Portfolio</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:portfolio' %}">{% trans "Portfolio" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:programs' %}">Programs</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:programs' %}">{% trans "Programs" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:contact' %}">Contact</a>
+                    <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:contact' %}">{% trans "Contact" %}</a>
                 </li>
             </ul>&nbsp;&nbsp;
             <a href="{% url 'mainapp:volunteer-application' %}">
@@ -46,7 +46,7 @@
             </a>
             <a href="{% url 'mainapp:contact' %}" style="text-decoration: none;">
                 <button class="getintouch-button">
-                    <span class="getintouch-text">Get in touch - it's free</span>
+                    <span class="getintouch-text">{% trans "Get in touch - it's free" %}</span>
                 </button>
             </a>
             <!-- <li class="nav-item">
