@@ -1,45 +1,48 @@
 {% extends "mainapp/base.html" %}
 {% load static %}
+{% load i18n %}
 {% load crispy_forms_tags %}
 {% block content %}
+<div style="background:url('../../static/images/sandra-back1.jpeg');background-repeat:repeat;">
 <p class="text-center contact-us-title">Contact Us</p>
 <div class="container">
     <div class="row pb-5">
         <div class="col-6">
             <form method="post">
+                {% csrf_token %}
                 <div class="contact-us-form-div p-5">
                     <div class="row pt-4 pb-2">
                         <div class="col">
-                            <label for="exampleFormControlInput1" class="form-label">FULL NAME</label>
+                            <label for="exampleFormControlInput1" class="form-label">{% trans "FULL NAME" %}</label>
                             {{form.full_name|as_crispy_field}}
                         </div>
                         <div class="col">
-                            <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
+                            <label for="exampleFormControlInput1" class="form-label">{% trans "EMAIL" %}</label>
                             {{form.email|as_crispy_field}}
                         </div>
                     </div>
                     <div class="row pt-4 pb-2">
                         <div class="col">
-                            <label for="exampleFormControlInput1" class="form-label">SUBJECT</label>
+                            <label for="exampleFormControlInput1" class="form-label">{% trans "SUBJECT" %}</label>
                             {{form.subject|as_crispy_field}}
                         </div>
                     </div>
                     <div class="row pt-4 pb-2">
                         <div class="col">
-                            <label for="exampleFormControlInput1" class="form-label">MESSAGE</label>
+                            <label for="exampleFormControlInput1" class="form-label">{% trans "MESSAGE" %}</label>
                             {{form.message|as_crispy_field}}
                         </div>
                     </div>
                     <div class="pt-4">
                         <button class="contact-us-form-div-button" type="submit">
-                            <span class="contact-us-form-div-button-text">Submit</span>
+                            <span class="contact-us-form-div-button-text" style="font-weight: bold;">{% trans "Submit" %}</span>
                         </button>
                     </div>
                 </div>
             </form>
         </div>
         <div class="col-6">
-            <img src="{% static 'images/Mention-pana1.png' %}" class="img-fluid">
+            <img src="{% static 'images/contact-alt.jpg' %}" class="img-fluid" style="border-radius: 40px;">
         </div>
     </div>
     <br><br>
@@ -47,7 +50,7 @@
         <div class="col">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center contact-us-icon-div">
-                    <img src="{% static 'images/location.svg' %}" class="img-fluid contact-us-icon" alt="location icon"/>
+                    <img src="{% static 'images/contact-location.png' %}" class="img-fluid contact-us-icon" alt="location icon" style="height:54px;"/>
                 </div>
             </div>
             <p class="pt-4 text-center contact-us-icon-text">The Mirage Towers, <br>Ground Floor, <br>Suite 15</p>
@@ -55,32 +58,32 @@
         <div class="col">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center contact-us-icon-div">
-                    <img src="{% static 'images/phone.svg' %}" class="img-fluid contact-us-icon" alt="location icon"/>
+                    <img src="{% static 'images/contact-phone.png' %}" class="img-fluid contact-us-icon" alt="location icon"/>
                 </div>
             </div>
             
-            <p class="pt-4 text-center contact-us-icon-text">Phone: <br>+254 114 824 347</p>
+            <p class="pt-4 text-center contact-us-icon-text">{% trans "Phone" %}: <br>+254 114 824 347</p>
         </div>
         <div class="col">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center contact-us-icon-div">
-                    <img src="{% static 'images/envelope.svg' %}" class="img-fluid contact-us-icon" alt="location icon"/>
+                    <img src="{% static 'images/contact-envelope.png' %}" class="img-fluid contact-us-icon" alt="location icon"/>
                 </div>
             </div>
             
-            <p class="pt-4 text-center contact-us-icon-text">Email: <br>info@elandome.com</p>
+            <p class="pt-4 text-center contact-us-icon-text">{% trans "Email" %}: <br>info@elandome.com</p>
         </div>
         <div class="col">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center contact-us-icon-div">
-                    <img src="{% static 'images/web.svg' %}" class="img-fluid contact-us-icon" alt="location icon"/>
+                    <img src="{% static 'images/contact-globe.png' %}" class="img-fluid contact-us-icon" alt="location icon"/>
                 </div>
             </div>
-            <p class="pt-4 text-center contact-us-icon-text">Website: <br>www.elandome.org</p>
+            <p class="pt-4 text-center contact-us-icon-text">{% trans "Website" %}: <br>www.elandome.org</p>
         </div>
     </div>
     
-    <p class="text-center contact-us-title2">Pay Us a Visit</p>
+    <p class="text-center contact-us-title2">{% trans "Pay Us a Visit" %}</p>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.838194716477!2d36.80499561469349!3d-1.2700207990736774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17399ed7e0d9%3A0x3bf85e96965485b2!2sMirage%20Towers!5e0!3m2!1sen!2ske!4v1665853619071!5m2!1sen!2ske"
         width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy">
@@ -88,5 +91,6 @@
     <p class="py-5 text-center">
         Copyright © 2022 | All Rights Reserved.
     </p>
+</div>
 </div>
 {% endblock content %}

@@ -92,6 +92,24 @@ header .container {
     position: relative;
     z-index: 2;
 }
+.popo {
+    position: relative;
+    background-color: black;
+    height: 60vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.popo .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
 
 header .overlay {
     position: absolute;
@@ -103,7 +121,6 @@ header .overlay {
     opacity: 0.5;
     z-index: 1;
 }
-
 
 /* About Page */
 
@@ -124,7 +141,7 @@ header .overlay {
     font-size: 40px;
     line-height: 48px;
     color:#fff;
-    padding-top:50px;
+    padding-top:124px;
 }
 .about-us-bottom-button{
     /* display: flex;
@@ -256,14 +273,15 @@ color: #014F42;
     line-height: 48px;
     text-align: center;
     color: #000000;
-    padding-top: 85px;
+    padding-top: 124px;
     padding-bottom: 74px;
 }
 .single-portfolio-div{
     width: 316px;
     height: 393px;
-    background: #F7F7F7;
+    background: #fff;
     border-radius: 20px;
+    box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 .single-portfolio-div-image{
     width: 316px;
@@ -288,6 +306,7 @@ color: #014F42;
     line-height: 24px;
     color: #000000;
     padding-left: 20px;
+    padding-right: 10px;
     padding-top: 5px;
 }
 .programs-text{
@@ -309,7 +328,7 @@ color: #014F42;
     line-height: 48px;
     text-align: center;
     color: #000000;
-    padding-top: 65px;
+    padding-top: 124px;
     /* padding-bottom: 4px; */
 }
 
@@ -435,8 +454,14 @@ color: #014F42;
 }
 .contact-us-form-div {
     position: absolute;
-    background: rgba(217, 217, 217, 0.13);
+    background: #014f42;
     border-radius: 25px;
+}
+.contact-us-form-div input {
+    background: #fff;
+}
+.contact-us-form-div label {
+    color: #fff;
 }
 .contact-us-form-div-button {
     width: 166px;
@@ -462,11 +487,11 @@ color: #014F42;
 .contact-us-icon-div {
     width: 112px; 
     height:110px; 
-    background-color:rgba(1,79,66,0.3);
+    background-color:#014F42;
     border-radius:50%
 }
 .contact-us-icon{
-    width:44px; height:54.48px;
+    width:44px; height:44px;
 }
 .contact-us-icon-text {
     font-weight: 600;

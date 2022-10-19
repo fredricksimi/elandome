@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import ContactPageForm, VolunteerApplicationForm
 from datetime import datetime, timezone
+from django.utils.translation import gettext as _
 # Create your views here.
 
 def home_view(request):

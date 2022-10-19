@@ -1,8 +1,10 @@
 {% extends "mainapp/base.html" %}
 {% load static %}
+{% load i18n %}
 {% load crispy_forms_tags %}
 {% block content %}
-<p class="portfolio-page-title">Volunteer Application Form</p>
+<div style="background:url('../../static/images/sandra-back1.jpeg');background-repeat:repeat;">
+<p class="portfolio-page-title">Fill the form below</p>
 <div class="container">
     <form action="" method="post">
         <div class="row">
@@ -227,5 +229,7 @@
         </div>
     </form>
 </div><br><br>
+</div>
+
 {% include "mainapp/footer-alt.html" %}
 {% endblock content %}
