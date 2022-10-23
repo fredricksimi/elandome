@@ -62,3 +62,6 @@ def application_view(request):
         'form':form
     }
     return render(request, 'mainapp/application-form.html', context)
+
+def news_view(request):
+    return render(request, 'mainapp/news.html')

@@ -82,11 +82,13 @@
                     {% blocktrans %}The OBC volunteer program will help you render assistance to underprivileged and underserved communities where you will experience 
                     traditional cultures and even get a chance to interact with rich wildlife all while supporting a good cause and creating a positive impact in the society.{% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">{% trans "Learn More" %}</span>
-                    </button>
-                </center>
+                <a href="{% url 'mainapp:programs' %}#volunteer">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">{% trans "Learn More" %}</span>
+                        </button>
+                    </center>
+                </a>
             </div>
         </div>
         
@@ -94,17 +96,27 @@
             <div class="col-md-7">
                 <p class="text-center programs-text pt-4">{% trans "Investment supervision, coordination and implementation" %}</p>
                 <p>
-                    {% blocktrans %}We help you to build action oriented strategic plans, communication, business development, marketing and partnership strategies, internal policies and 
-                    customer experience needs in the following industry categories and sectors:{% endblocktrans %} 
+                    {% blocktrans %}We provide guidance and advice to individuals, groups and institutions about their investments and how to 
+                    safeguard their interests and attain positive results. We further monitor the activities of these investments 
+                    to ensure that there's full accountability and clarity on the utilisation of resources.{% endblocktrans %} 
                 </p>
                 <p>
-                    {% trans "SMEs, FMCG, Consulting firms, INGOs, not for profit organizations including CBOs, CSOs, FBOs, civil societies, government, academic institutions and individuals." %}
+                    {% blocktrans %}
+                    Additionally, we advise organisations on key strategic issues by leveraging on our industry knowledge and 
+                    analytical prowess, to enable  them make informed decisions. This service enables them to achieve their 
+                    business objectives by capitalising on opportunities and being prepared to mitigate potential risks.
+                    {% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">{% trans "Learn More" %}</span>
-                    </button>
-                </center>
+                <!-- <p>
+                    {% trans "SMEs, FMCG, Consulting firms, INGOs, not for profit organizations including CBOs, CSOs, FBOs, civil societies, government, academic institutions and individuals." %}
+                </p> -->
+                <a href="{% url 'mainapp:programs' %}#investment">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">{% trans "Learn More" %}</span>
+                        </button>
+                    </center>
+                </a>
             </div>
             <div class="col-md-5">
                 <div class="d-flex justify-content-end">
@@ -129,11 +141,13 @@
                     {% blocktrans %}Our areas of focus include: research, digitization, real estate & construction, corporate events (workshops and employee development programs), 
                     budgeting exercises and project fundraising initiatives.{% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">{% trans "Learn More" %}</span>
-                    </button>
-                </center>
+                <a href="{% url 'mainapp:programs' %}#project-management">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">{% trans "Learn More" %}</span>
+                        </button>
+                    </center>
+                </a>
             </div>
         </div>
         
@@ -151,11 +165,13 @@
                     b)  {% blocktrans %}Leadership i.e adaptable leadership, progressive organization culture, next level leadership, performance 
                     (financial & operational) and decision making analysis & design){% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">Learn More</span>
-                    </button>
-                </center>
+                <a href="{% url 'mainapp:programs' %}#workshops">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">Learn More</span>
+                        </button>
+                    </center>
+                </a>
             </div>
             <div class="col-md-5">
                 <div class="d-flex justify-content-end">
@@ -181,11 +197,13 @@
                     international opportunities search criteria, preparation for the next level, value brnding per work outcome, 
                     knowing when to leave and winning negotiation skills for contracts.{% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">Learn More</span>
-                    </button>
-                </center>
+                <a href="{% url 'mainapp:programs' %}#career">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">Learn More</span>
+                        </button>
+                    </center>
+                </a>
             </div>
         </div>
     </div>
@@ -208,11 +226,13 @@
                     {% blocktrans %}The OBC volunteer program will help you render assistance to underprivileged and underserved communities where you will experience 
                     traditional cultures and even get a chance to interact with rich wildlife all while supporting a good cause and creating a positive impact in the society.{% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">{% trans "Learn More" %}</span>
-                    </button>
-                </center>
+                <a href="{% url 'mainapp:programs' %}#volunteer">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">Learn More</span>
+                        </button>
+                    </center>
+                </a>
             </div>
         </div>
         <div class="row pt-5 d-flex align-items-center">
@@ -224,17 +244,31 @@
             <div class="col-md-7">
                 <p class="text-center programs-text pt-4">{% trans "Investment supervision, coordination and implementation" %}</p>
                 <p>
+                    {% blocktrans %}We provide guidance and advice to individuals, groups and institutions about their investments and how to 
+                    safeguard their interests and attain positive results. We further monitor the activities of these investments 
+                    to ensure that there's full accountability and clarity on the utilisation of resources.{% endblocktrans %} 
+                </p>
+                <p>
+                    {% blocktrans %}
+                    Additionally, we advise organisations on key strategic issues by leveraging on our industry knowledge and 
+                    analytical prowess, to enable  them make informed decisions. This service enables them to achieve their 
+                    business objectives by capitalising on opportunities and being prepared to mitigate potential risks.
+                    {% endblocktrans %}
+                </p>
+                <!-- <p>
                     {% blocktrans %}We help you to build action oriented strategic plans, communication, business development, marketing and partnership strategies, internal policies and 
                     customer experience needs in the following industry categories and sectors:{% endblocktrans %} 
                 </p>
                 <p>
                     {% trans "SMEs, FMCG, Consulting firms, INGOs, not for profit organizations including CBOs, CSOs, FBOs, civil societies, government, academic institutions and individuals." %}
-                </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">{% trans "Learn More" %}</span>
-                    </button>
-                </center>
+                </p> -->
+                <a href="{% url 'mainapp:programs' %}#investment">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">Learn More</span>
+                        </button>
+                    </center>
+                </a>
             </div>
         </div>
         <br>
@@ -254,11 +288,13 @@
                     {% blocktrans %}Our areas of focus include: research, digitization, real estate & construction, corporate events (workshops and employee development programs), 
                     budgeting exercises and project fundraising initiatives.{% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">{% trans "Learn More" %}</span>
-                    </button>
-                </center>
+                <a href="{% url 'mainapp:programs' %}#project-management">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">Learn More</span>
+                        </button>
+                    </center>
+                </a>
             </div>
         </div>
         <br>
@@ -281,11 +317,13 @@
                     b)  {% blocktrans %}Leadership i.e adaptable leadership, progressive organization culture, next level leadership, performance 
                     (financial & operational) and decision making analysis & design){% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">Learn More</span>
-                    </button>
-                </center>
+                <a href="{% url 'mainapp:programs' %}#workshops">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">Learn More</span>
+                        </button>
+                    </center>
+                </a>
             </div>
         </div>
         <br>
@@ -306,11 +344,13 @@
                     international opportunities search criteria, preparation for the next level, value brnding per work outcome, 
                     knowing when to leave and winning negotiation skills for contracts.{% endblocktrans %}
                 </p>
-                <center>
-                    <button type="submit" class="signin-button" style="border-radius:6px !important;">
-                        <span class="signin-text">Learn More</span>
-                    </button>
-                </center>
+                <a href="{% url 'mainapp:programs' %}#career">
+                    <center>
+                        <button type="submit" class="signin-button" style="border-radius:6px !important;">
+                            <span class="signin-text">Learn More</span>
+                        </button>
+                    </center>
+                </a>
             </div>
         </div>
     </div>
@@ -327,7 +367,9 @@
                     <p class="accountabilitytext">We are all about accountability and convenience. Curious?</p>
                 </div>
                 <div class="col-md-5 pt-3 pb-3 d-flex justify-content-center">
-                    <button class="" style="padding:20px 42px;background-color: #CC3E18;color:#fff;border: none;"><span style="font-weight: bold;">LET'S TALK</span></button>
+                    <a href="{% url 'mainapp:contact' %}">
+                        <button class="" style="padding:20px 42px;background-color: #CC3E18;color:#fff;border: none;"><span style="font-weight: bold;">LET'S TALK</span></button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -342,7 +384,9 @@
                     <p class="accountabilitytext">We are all about accountability and convenience. Curious?</p>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center">
-                    <button class="" style="padding:20px 42px;background-color: #CC3E18;color:#fff;border: none;"><span style="font-weight: bold;">LET'S TALK</span></button>
+                    <a href="{% url 'mainapp:contact' %}">
+                        <button class="" style="padding:20px 42px;background-color: #CC3E18;color:#fff;border: none;"><span style="font-weight: bold;">LET'S TALK</span></button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@
 <div style="background:url('../../static/images/sandra-back7.jpeg');background-repeat:repeat;">
 <p class="programs-page-title">{% trans "Our Programs" %}</p>
 <div class="container pb-5 pt-5">
-    <div class="row d-flex align-items-center">
+    <div class="row d-flex align-items-center" id="volunteer">
         <div class="col-md-5">
             <div class="d-flex justify-content-center">
                 <img src="{% static 'images/programs-volunteer.jpeg' %}" class="img-fluid" alt="programs image">
@@ -65,44 +65,69 @@
         <br>
     </div>
     <!-- Mobile View -->
-    <div class="row d-flex align-items-center pt-5 d-block d-sm-none">
-        <div class="col-md-5">
-            <div class="d-flex justify-content-center">
-                <img src="{% static 'images/programs-supervision.jpeg' %}" class="img-fluid" alt="programs image">
+    <div class="d-block d-sm-none">
+        <div class="row d-flex align-items-center pt-5" id="investment">
+            <div class="col-md-5">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/programs-supervision.jpeg' %}" class="img-fluid" alt="programs image">
+                </div>
             </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6">
-            <p class="text-center programs-text pt-2">{% trans "Investment supervision, coordination and implementation" %}</p>
-            <p>
-                {% blocktrans %}We help you to build action oriented strategic plans, communication, business development, marketing 
-                and partnership strategies, internal policies and customer experience needs in the following industry 
-                categories and sectors : SMEs, FMCG, Consulting firms, INGOs, not for profit organizations including 
-                CBOs, CSOs, FBOs, civil societies, government, academic institutions and individuals.{% endblocktrans %}
-            </p>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <p class="text-center programs-text pt-2">{% trans "Investment supervision, coordination and implementation" %}</p>
+                <p>
+                    {% blocktrans %}We support local citizens in the diaspora and international investors with all their investment
+                    needs. Using our knowledge about the local market we prioritize efficient and seamless operations that protect 
+                    them from negative eventualities. Through our investment supervision services, we offer our local and 
+                    international investor's representative service and supervision of their investment projects thereby enhancing 
+                    accountability.{% endblocktrans %} 
+                </p>
+                <p>These services range from:</p>
+                <ol class="list-group-numbered">
+                    <li class="list-group-item">Supporting managing the entire investment process.</li>
+                    <li class="list-group-item">Regularly inspecting investments sites in order to control the progress.</li>
+                    <li class="list-group-item">Verifying work carried out contractors.</li>
+                    <li class="list-group-item">Generating post-completion documentation.</li>
+                    <li class="list-group-item">Taking part in coordination meetings.</li>
+                    <li class="list-group-item">Preparing and taking part in the final handover of the investment to the investor.</li>
+                </ol>
+            </div>
         </div>
     </div>
     <!-- End of Mobile View -->
+
     <!-- Desktop View -->
-    <div class="row d-flex align-items-center pt-5 d-none d-sm-block">
-        <div class="col-md-6">
-            <p class="text-center programs-text pt-2">{% trans "Investment supervision, coordination and implementation" %}</p>
-            <p>
-                {% blocktrans %}We help you to build action oriented strategic plans, communication, business development, marketing 
-                and partnership strategies, internal policies and customer experience needs in the following industry 
-                categories and sectors : SMEs, FMCG, Consulting firms, INGOs, not for profit organizations including 
-                CBOs, CSOs, FBOs, civil societies, government, academic institutions and individuals.{% endblocktrans %}
-            </p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-            <div class="d-flex justify-content-center">
-                <img src="{% static 'images/programs-supervision.jpeg' %}" class="img-fluid" alt="programs image">
+    <div class="d-none d-sm-block">
+        <div class="row d-flex align-items-center pt-5" id="investment">
+            <div class="col-md-6">
+                <p class="text-center programs-text pt-2">{% trans "Investment supervision, coordination and implementation" %}</p>
+                <p>
+                    {% blocktrans %}We support local citizens in the diaspora and international investors with all their investment
+                    needs. Using our knowledge about the local market we prioritize efficient and seamless operations that protect 
+                    them from negative eventualities. Through our investment supervision services, we offer our local and 
+                    international investor's representative service and supervision of their investment projects thereby enhancing 
+                    accountability.{% endblocktrans %} 
+                </p>
+                <p>These services range from:</p>
+                <ol class="list-group-numbered">
+                    <li class="list-group-item">Supporting managing the entire investment process.</li>
+                    <li class="list-group-item">Regularly inspecting investments sites in order to control the progress.</li>
+                    <li class="list-group-item">Verifying work carried out contractors.</li>
+                    <li class="list-group-item">Generating post-completion documentation.</li>
+                    <li class="list-group-item">Taking part in coordination meetings.</li>
+                    <li class="list-group-item">Preparing and taking part in the final handover of the investment to the investor.</li>
+                </ol>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/programs-supervision.jpeg' %}" class="img-fluid" alt="programs image">
+                </div>
             </div>
         </div>
     </div>
     <!-- End of Desktop View -->
-    <div class="row d-flex align-items-center pt-5">
+    <div class="row d-flex align-items-center pt-5" id="project-management">
         <div class="col-md-5">
             <div class="d-flex justify-content-center">
                 <img src="{% static 'images/programs-project-management.jpeg' %}" class="img-fluid" alt="programs image">
@@ -143,67 +168,73 @@
         </div>
     </div>
     <!-- Mobile View -->
-    <div class="row d-flex align-items-center pt-5 d-block d-sm-none">
-        <div class="col-md-5">
-            <div class="d-flex justify-content-center">
-                <img src="{% static 'images/programs-workshops-training.jpeg' %}" class="img-fluid" alt="programs image">
+    <div class=" d-block d-sm-none">
+        <div class="row d-flex align-items-center pt-5" id="workshops">
+            <div class="col-md-5">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/programs-workshops-training.jpeg' %}" class="img-fluid" alt="programs image">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <p class="text-center programs-text pt-2">{% trans "Workshops & Training" %}</p>
+                <p>
+                    {% blocktrans %}
+                    Workshops provide an avenue to explore current topics, hands-on training, and practical application.
+                    ELAN Done offers a wide array of interactive and dynamic workshops and training sessions that
+                    can be easily customized to suit different individuals, groups and organizations. (Corporate
+                    Organizations, Educational Institutions, NGOs, CBOs etc)
+                    {% endblocktrans %}
+                </p>
+                <p>
+                    {% blocktrans %}
+                    These workshops and training sessions focus on respective areas as requested by our clients.
+                    They range from personal development areas to professional improvement areas like
+                    leadership training and change management. They are particularly very beneficial to
+                    organizations that would like to optimize their manpower and create unison within different
+                    departments.
+                    {% endblocktrans %}
+                </p>
             </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6">
-            <p class="text-center programs-text pt-2">{% trans "Workshops & Training" %}</p>
-            <p>
-                {% blocktrans %}
-                Workshops provide an avenue to explore current topics, hands-on training, and practical application.
-                ELAN Done offers a wide array of interactive and dynamic workshops and training sessions that
-                can be easily customized to suit different individuals, groups and organizations. (Corporate
-                Organizations, Educational Institutions, NGOs, CBOs etc)
-                {% endblocktrans %}
-            </p>
-            <p>
-                {% blocktrans %}
-                These workshops and training sessions focus on respective areas as requested by our clients.
-                They range from personal development areas to professional improvement areas like
-                leadership training and change management. They are particularly very beneficial to
-                organizations that would like to optimize their manpower and create unison within different
-                departments.
-                {% endblocktrans %}
-            </p>
-        </div>
     </div>
+    
     <!-- End of Mobile View -->
 
     <!-- Desktop View -->
-    <div class="row d-flex align-items-center pt-5 d-none d-sm-block">
-        <div class="col-md-6">
-            <p class="text-center programs-text pt-2">{% trans "Workshops & Training" %}</p>
-            <p>
-                {% blocktrans %}
-                Workshops provide an avenue to explore current topics, hands-on training, and practical application.
-                ELAN Done offers a wide array of interactive and dynamic workshops and training sessions that
-                can be easily customized to suit different individuals, groups and organizations. (Corporate
-                Organizations, Educational Institutions, NGOs, CBOs etc)
-                {% endblocktrans %}
-            </p>
-            <p>
-                {% blocktrans %}
-                These workshops and training sessions focus on respective areas as requested by our clients.
-                They range from personal development areas to professional improvement areas like
-                leadership training and change management. They are particularly very beneficial to
-                organizations that would like to optimize their manpower and create unison within different
-                departments.
-                {% endblocktrans %}
-            </p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-            <div class="d-flex justify-content-center">
-                <img src="{% static 'images/programs-workshops-training.jpeg' %}" class="img-fluid" alt="programs image">
+    <div class="d-none d-sm-block">
+        <div class="row d-flex align-items-center pt-5" id="workshops">
+            <div class="col-md-6">
+                <p class="text-center programs-text pt-2">{% trans "Workshops & Training" %}</p>
+                <p>
+                    {% blocktrans %}
+                    Workshops provide an avenue to explore current topics, hands-on training, and practical application.
+                    ELAN Done offers a wide array of interactive and dynamic workshops and training sessions that
+                    can be easily customized to suit different individuals, groups and organizations. (Corporate
+                    Organizations, Educational Institutions, NGOs, CBOs etc)
+                    {% endblocktrans %}
+                </p>
+                <p>
+                    {% blocktrans %}
+                    These workshops and training sessions focus on respective areas as requested by our clients.
+                    They range from personal development areas to professional improvement areas like
+                    leadership training and change management. They are particularly very beneficial to
+                    organizations that would like to optimize their manpower and create unison within different
+                    departments.
+                    {% endblocktrans %}
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'images/programs-workshops-training.jpeg' %}" class="img-fluid" alt="programs image">
+                </div>
             </div>
         </div>
     </div>
+    
     <!-- End of Desktop View -->
-    <div class="row d-flex align-items-center pt-5">
+    <div class="row d-flex align-items-center pt-5" id="career">
         <div class="col-md-5">
             <div class="d-flex justify-content-center">
                 <img src="{% static 'images/programs-career-counselling.jpeg' %}" class="img-fluid" alt="programs image">

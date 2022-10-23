@@ -2,6 +2,16 @@
 {% load i18n %}
 {% load static %}
 {% block content %}
+<style>
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    </style>
 <br><br><br>
 <div style="background:url('../../static/images/sandra-banner.jpeg');background-repeat: none;background-position: top center;background-size: cover; height:478px;">
     
@@ -32,18 +42,18 @@
     <div class="container">
         <p class="pt-5 pb-3 text-center about-banner-text aboutelandome" style="color:#014f42;">About ELAN Dome Consultants</p>
         <p class="text-center">
-            {% blocktrans %}ELAN Dome Consultants is an Africa based, bred and led social & 
-            corporate outsourcing consultancy firm that strives to reshape the path of 
-            global education and international business engagements for students, individuals 
-            and institutions interested in integrating international experience and community 
-            service by offering high-quality international volunteer and service-learning engagements.{% endblocktrans %}
+            {% blocktrans %}ELAN (Education, Learning and Networking) Dome Consultants is an Africa based, bred 
+            and led social & corporate outsourcing consultancy firm that strives to reshape the path of social 
+            service and international business engagements for students, individuals and institutions interested 
+            in integrating international experience and community service by offering high-quality international 
+            volunteer and service-learning engagements. {% endblocktrans %}
         </p>
         <p class="text-center">
-            {% blocktrans %}Additionally, ELAN Dome Consultants offers strategic advisory services, organizational 
-            programming, project management, external quality assurance checks, curriculum research 
-            and development and international students collaboration projects. Our aim is to increase 
-            quality education accessibility and enhance the success rate for Africa based interventions 
-            by promoting cultural exchange and holistic learning.{% endblocktrans %}
+            {% blocktrans %}Additionally, ELAN Dome Consultants offers supervision and implementation support services, 
+            organizational programming, project management, external quality assurance checks, curriculum research and 
+            development and international students collaboration projects. Our aim is to enhance impactful initiatives 
+            in Africa by promoting cultural exchange, reliable investment in projects and holistic learning for local 
+            citizens in the diaspora and the international community.{% endblocktrans %}
         </p>
 
         <div class="row pt-5">
@@ -424,8 +434,9 @@
                 <div style="border-radius: 20px;background:url('../../static/images/sandra-back7.jpeg');background-repeat:repeat;">
                     <div>
                         <p class="service-title text-center missionvisiontext pt-4">{% trans "Want to know more?" %}</p>
-                        
-                        <p class="pt-2 text-center">{% trans "Get in touch with us. Our team is happy to help you to answer any questions you may have." %}</p>
+                        <p class="text-center">Visit our <a href="{% url 'mainapp:contact' %}#faqs">FAQs</a></p>
+                        <p class="text-center" style="font-weight:bold">Or</p>
+                        <p class="pt-1 text-center">{% trans "Get in touch with us. Our team is happy to help you to answer any questions you may have." %}</p>
                         <center>
                             <button class="about-us-bottom-button" style="background-color: #014f42;">
                                 <span class="about-us-bottom-button-text" style="color:white;font-weight:bold;">{% trans "Contact Us" %}</span>
@@ -450,8 +461,9 @@
                 <div style="border-radius: 20px;background:url('../../static/images/sandra-back7.jpeg');background-repeat:repeat;">
                     <div style="padding:40px 80px;">
                         <p class="service-title text-center" style="padding-top:20px;font-weight:bold;color: #000;">{% trans "Want to know more?" %}</p>
-                        
-                        <p class="pt-3 text-center">{% trans "Get in touch with us. Our team is happy to help you to" %} <br>{% trans "answer any questions you may have." %}</p>
+                        <p class="text-center">Visit our <a href="{% url 'mainapp:contact' %}#faqs">FAQs</a></p>
+                        <p class="text-center" style="font-weight:bold">Or</p>
+                        <p class="pt-1 text-center">{% trans "Get in touch with us. Our team is happy to help you to" %} <br>{% trans "answer any questions you may have." %}</p>
                         <br>
                         <center>
                             <button class="about-us-bottom-button" style="background-color: #014f42;">

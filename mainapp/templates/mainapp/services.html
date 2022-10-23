@@ -252,7 +252,7 @@ html,body
 </div>
 <div class="py-3" style="background:url('../../static/images/sandra-back7.jpeg');background-repeat:repeat;">
     <p class="service-title pb-5 text-center" style="padding-top:80px;">{% trans "Our Portfolio" %}</p>
-    <div class="row pb-5">
+    <!-- <div class="row pb-5">
         <div class="col">
             <div class="d-flex justify-content-center">
                 <div class="single-portfolio-div" style="background-color: #fff;">
@@ -280,9 +280,63 @@ html,body
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{% static 'images/home-volunteers.png' %}" alt="portfolio image" class="img-fluid">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+                <p class="text-center programs-text pt-4">Volunteer Services</p>
+                <p class="pt-3">
+                    {% blocktrans %}The OBC volunteer program was created in honor of the Late Engineer Okore Booker Charles. This program has been carefully curated to 
+                    reflect and inculcate the values that he lived by throughout his life in community service and social impact.{% endblocktrans %} 
+                </p>
+                <p>
+                    {% blocktrans %}The OBC volunteer program will help you render assistance to underprivileged and underserved communities where you will experience 
+                    traditional cultures and even get a chance to interact with rich wildlife all while supporting a good cause and creating a positive impact in the society.{% endblocktrans %}
+                </p>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-7">
+                <p class="text-center programs-text pt-4">Project Management</p>
+                <p class="pt-3">
+                    {% blocktrans %}We are the  first choice custodians of your projects and resources on ground. We source for quality and competitive resource plans, quotations, unique development 
+                    plans and bespoke designs that are fairly priced and work with reputable excerpts to execute your vision and deliver beyond the expected outcomes.{% endblocktrans %}
+                </p>
+                <p>
+                    {% blocktrans %}Our areas of focus include: research, digitization, real estate & construction, corporate events (workshops and employee development programs), 
+                    budgeting exercises and project fundraising initiatives.{% endblocktrans %}
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <img src="{% static 'images/home-project-management.png' %}" alt="portfolio image" class="img-fluid">
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-4">
+                <img src="{% static 'images/home-career-counselling.png' %}" alt="portfolio image" class="img-fluid">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+                <p class="text-center programs-text pt-4">Career Counselling</p>
+                <p class="pt-3">
+                    {% trans "We walk with you the journey to discovering what sets your soul on fire professionally." %} 
+                </p>
+                <p>
+                    {% blocktrans %}We help you develop skills that support your professional vision and ad-ons aimed at 
+                    realizing your professional goals such as communication, ethics, personal presentation & profiling, 
+                    international opportunities search criteria, preparation for the next level, value brnding per work outcome, 
+                    knowing when to leave and winning negotiation skills for contracts.{% endblocktrans %}
+                </p>
+            </div>
+        </div>
     </div>
     <div class="pt-4 pb-5 d-flex justify-content-center">
-        <a href="{% url 'mainapp:portfolio' %}">
+        <a href="{% url 'mainapp:programs' %}">
             <button class="contact-us-form-div-button">
                 <span class="contact-us-form-div-button-text" style="font-weight:bold">Find Out More</span>
             </button>
