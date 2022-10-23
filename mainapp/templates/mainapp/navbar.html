@@ -38,19 +38,24 @@
                 <li class="nav-item">
                     <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:news' %}">News</a>
                 </li>
+                <li class="nav-item">
+                    <a class="d-grid d-md-block " href="{% url 'mainapp:application-form' %}" style="text-decoration: none;color:#fff;">
+                        <button class="btn btn-primary" style="background-color: #cc3e18;border:none;" type="button">
+                            <span style="font-size:14px;line-height: 20px;font-weight:bold">{% trans "Join Us" %}</span>
+                        </button>
+                    </a>
+                </li>
+                <span class="d-block d-sm-none"><div class="pb-2"></div></span>
+                <span class="d-none d-sm-block"><span class="">&nbsp;&nbsp;</span></span>
+                <li class="nav-item">
+                    <a class="d-grid d-md-block " href="{% url 'mainapp:contact' %}" style="text-decoration: none;color:#fff;">
+                        <button class="btn btn-primary" style="background-color: #014f42;border:none;" type="button">
+                            <span style="font-size:14px;line-height: 20px;font-weight: bold;">{% trans "Get in touch - it's free" %}</span>
+                        </button>
+                    </a>
+                </li>
             </ul>
-            <div class="d-grid gap-2 d-md-block">
-                <a class="d-grid d-md-block" href="{% url 'mainapp:application-form' %}" style="text-decoration: none;color:#fff;">
-                    <button class="btn btn-primary" style="background-color: #cc3e18;border:none;" type="button">
-                        <span style="font-size:14px;line-height: 20px;font-weight:bold">{% trans "Join Us" %}</span>
-                    </button>
-                </a>
-                <a class="d-grid d-md-block" href="{% url 'mainapp:contact' %}" style="text-decoration: none;color:#fff;">
-                    <button class="btn btn-primary" style="background-color: #014f42;border:none;" type="button">
-                        <span style="font-size:14px;line-height: 20px;font-weight: bold;">{% trans "Get in touch - it's free" %}</span>
-                    </button>
-                </a>
-            </div>
+            
             <!-- <li class="nav-item">
                 {% get_current_language as LANGUAGE_CODE %}
                 <form class="d-flex" action="{% url 'set_language' %}" method="post">
