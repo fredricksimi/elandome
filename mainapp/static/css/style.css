@@ -127,6 +127,12 @@ header .overlay {
     font-weight: 500;
     color:white;
 }
+.wewithyoutext{
+    font-size: 24px;
+    line-height:36px;
+    font-weight: 500;
+    color:white;
+}
 .withyourow{
     padding-top:56px;
 }
@@ -476,7 +482,7 @@ color: #014F42;
     padding-bottom: 54px;
 }
 .contact-us-form-div {
-    position: absolute;
+    /* position: absolute; */
     background: #014f42;
     border-radius: 25px;
 }
@@ -582,6 +588,12 @@ color: #014F42;
     }
     .process-desc {
         padding-top: 20px;
+    }
+    .wewithyoutext{
+        font-size: 20px;
+        line-height:3opx;
+        font-weight: 500;
+        color:white;
     }
 }
 @media only screen and (min-width : 480px) {
