@@ -7,28 +7,28 @@
 <p class="text-center contact-us-title">Contact Us</p>
 <div class="container">
     <div class="row pb-5">
-        <div class="col-6">
+        <div class="col-md-6">
             <form method="post">
                 {% csrf_token %}
                 <div class="contact-us-form-div p-5">
                     <div class="row pt-4 pb-2">
-                        <div class="col">
+                        <div class="col-md-4">
                             <label for="exampleFormControlInput1" class="form-label">{% trans "FULL NAME" %}</label>
                             {{form.full_name|as_crispy_field}}
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <label for="exampleFormControlInput1" class="form-label">{% trans "EMAIL" %}</label>
                             {{form.email|as_crispy_field}}
                         </div>
                     </div>
                     <div class="row pt-4 pb-2">
-                        <div class="col">
+                        <div class="col-md-12">
                             <label for="exampleFormControlInput1" class="form-label">{% trans "SUBJECT" %}</label>
                             {{form.subject|as_crispy_field}}
                         </div>
                     </div>
                     <div class="row pt-4 pb-2">
-                        <div class="col">
+                        <div class="col=md-12">
                             <label for="exampleFormControlInput1" class="form-label">{% trans "MESSAGE" %}</label>
                             {{form.message|as_crispy_field}}
                         </div>
@@ -41,13 +41,13 @@
                 </div>
             </form>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
             <img src="{% static 'images/contact-alt22.jpeg' %}" class="img-fluid" style="border-radius: 40px;">
         </div>
     </div>
     <br><br>
     <div class="row pt-5 pb-5">
-        <div class="col">
+        <div class="col-md-3">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center contact-us-icon-div">
                     <img src="{% static 'images/contact-location.png' %}" class="img-fluid contact-us-icon" alt="location icon" style="height:54px;"/>
@@ -55,7 +55,7 @@
             </div>
             <p class="pt-4 text-center contact-us-icon-text">The Mirage Towers, <br>Ground Floor, <br>Suite 15</p>
         </div>
-        <div class="col">
+        <div class="col-md-3">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center contact-us-icon-div">
                     <img src="{% static 'images/contact-phone.png' %}" class="img-fluid contact-us-icon" alt="location icon"/>
@@ -64,7 +64,7 @@
             
             <p class="pt-4 text-center contact-us-icon-text">{% trans "Phone" %}: <br>+254 114 824 347</p>
         </div>
-        <div class="col">
+        <div class="col-md-3">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center contact-us-icon-div">
                     <img src="{% static 'images/contact-envelope.png' %}" class="img-fluid contact-us-icon" alt="location icon"/>
@@ -73,7 +73,7 @@
             
             <p class="pt-4 text-center contact-us-icon-text">{% trans "Email" %}: <br>info@elandome.com</p>
         </div>
-        <div class="col">
+        <div class="col-md-3">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center contact-us-icon-div">
                     <img src="{% static 'images/contact-globe.png' %}" class="img-fluid contact-us-icon" alt="location icon"/>

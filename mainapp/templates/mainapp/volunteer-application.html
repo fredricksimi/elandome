@@ -8,17 +8,17 @@
 <div class="container">
     <form action="" method="post">
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="First Name" class="form-label">First Name</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="First Name"> -->
                 {{form.first_name|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Last Name" class="form-label">Last Name</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Last Name"> -->
                 {{form.last_name|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Preferred Name" class="form-label">Preferred Name</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Preferred Name"> -->
                 {{form.preferred_name|as_crispy_field}}
@@ -26,17 +26,17 @@
         </div>
 
         <div class="row pt-5">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Email" class="form-label">Email</label>
                 <!-- <input type="email" name="" class="form-control" id="" placeholder="Email"> -->
                 {{form.email|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Street Address" class="form-label">Street Address</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Street Address"> -->
                 {{form.street_address|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="City" class="form-label">City</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="City"> -->
                 {{form.city|as_crispy_field}}
@@ -44,17 +44,17 @@
         </div>
 
         <div class="row pt-5">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="State/Province" class="form-label">State/Province</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="State/Province"> -->
                 {{form.state_or_province|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Country of Origin" class="form-label">Country of Origin</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Country of Origin"> -->
                 {{form.country_of_origin|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Home Phone" class="form-label">Home Phone</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Home Phone"> -->
                 {{form.home_phone|as_crispy_field}}
@@ -62,17 +62,17 @@
         </div>
 
         <div class="row pt-5">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Mobile Phone" class="form-label">Mobile Phone</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Mobile Phone"> -->
                 {{form.mobile_phone|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Office Tel." class="form-label">Office Tel.</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Office Tel."> -->
                 {{form.office_tel|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Gender" class="form-label">Gender</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Gender"> -->
                 {{form.gender|as_crispy_field}}
@@ -80,12 +80,12 @@
         </div>
 
         <div class="row pt-5">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Date of Birth" class="form-label">Date of Birth</label>
                 <!-- <input type="date" name="" class="form-control" id="" placeholder="Date of Birth"> -->
                 {{form.date_of_birth|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Nationality" class="form-label">Nationality</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Nationality"> -->
                 {{form.nationality|as_crispy_field}}
@@ -95,24 +95,24 @@
         <br><br>
         <div class="row pt-5">
             <p style="font-weight:bold">Emergency Contact</p>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Full Name" class="form-label">Full Name</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Full Name"> -->
                 {{form.emergency_contact_full_name|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Telephone No." class="form-label">Telephone No.</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Telephone No."> -->
                 {{form.emergency_contact_telephone_no|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Residential Address" class="form-label">Residential Address</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Residential Address"> -->
                 {{form.emergency_contact_residential_address|as_crispy_field}}
             </div>
         </div>
         <div class="row pt-3">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Relationship" class="form-label">Relationship</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Relationship"> -->
                 {{form.emergency_contact_relationship|as_crispy_field}}
@@ -122,24 +122,24 @@
         <br><br>
         <div class="row pt-5">
             <p style="font-weight:bold">Referee Contact</p>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Full Name" class="form-label">Full Name</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Full Name"> -->
                 {{form.referee_contact_full_name|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Organization" class="form-label">Organization</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Organization"> -->
                 {{form.referee_contact_organization|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Telephone No." class="form-label">Telephone No.</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Telephone No."> -->
                 {{form.referee_contact_telephone_no|as_crispy_field}}
             </div>
         </div>
         <div class="row pt-3">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Work Address" class="form-label">Work Address</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Work Address"> -->
                 {{form.referee_contact_work_address|as_crispy_field}}
@@ -157,17 +157,17 @@
 
         <br><br>
         <div class="row pt-5">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Health conditions, disabilities e.t.c" class="form-label">Health conditions, disabilities e.t.c</label>
                 <!-- <textarea name="" id="" rows="3" class="form-control" placeholder="Health conditions, disabilities e.t.c"></textarea> -->
                 {{form.health_conditions_disabilities|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Preferred Program" class="form-label">Preferred Program</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Preferred Program"> -->
                 {{form.preferred_program|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Personalized Preferrences" class="form-label">Personalized Preferrences</label>
                 <!-- <textarea name="" id="" rows="3" class="form-control" placeholder="Personalized Preferrences"></textarea> -->
                 {{form.personalized_preferrences|as_crispy_field}}
@@ -175,17 +175,17 @@
         </div>
 
         <div class="row pt-5">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Travel Packs" class="form-label">Travel Packs</label>
                 <!-- <textarea name="" id="" rows="3" class="form-control" placeholder="Travel Packs"></textarea> -->
                 {{form.travel_pack|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Preferred Package" class="form-label">Preferred Package</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Preferred Package"> -->
                 {{form.preferred_package|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Duration of stay" class="form-label">Duration of stay</label>
                 <!-- <textarea name="" id="" rows="3" class="form-control" placeholder="Duration of stay"></textarea> -->
                 {{form.duration_of_stay|as_crispy_field}}
@@ -193,29 +193,29 @@
         </div>
 
         <div class="row pt-5">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Preferred City" class="form-label">Preferred City</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Preferred City"> -->
                 {{form.preferred_city|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="When would you like to travel?" class="form-label">When would you like to travel?</label>
                 <!-- <input type="date" name="" class="form-control" id="" placeholder="Date of Travel"> -->
                 {{form.date_of_travel|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Do you require further information?" class="form-label">Do you require further information?</label>
                 <!-- <textarea name="" id="" rows="3" class="form-control" placeholder="Type here..."></textarea> -->
                 {{form.do_you_require_further_information|as_crispy_field}}
             </div>
         </div>
         <div class="row pt-5">
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="How did you hear about us?" class="form-label">How did you hear about us?</label>
                 <!-- <input type="text" name="" class="form-control" id="" placeholder="Instagram Ad"> -->
                 {{form.how_did_you_hear_about_us|as_crispy_field}}
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <label for="Any other comments" class="form-label">Any other comments</label>
                 <!-- <textarea name="" id="" rows="3" class="form-control" placeholder="Type here..."></textarea> -->
                 {{form.any_other_comments|as_crispy_field}}
