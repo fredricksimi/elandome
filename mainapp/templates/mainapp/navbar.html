@@ -38,17 +38,19 @@
                 <li class="nav-item">
                     <a class="nav-link px-2 navlinkbold {{active}}" href="{% url 'mainapp:news' %}">News</a>
                 </li>
-            </ul>&nbsp;&nbsp;
-            <a href="{% url 'mainapp:application-form' %}">
-                <button class="signin-button me-2 gap">
-                    <span class="signin-text pb-2">Join Us</span>
+            </ul>
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary" style="background-color: #cc3e18;border:none;" type="button">
+                    <a href="{% url 'mainapp:application-form' %}"></a>
+                        <span style="font-size:14px;line-height: 20px;font-weight:bold">{% trans "Join Us" %}</span>
+                    </a>
                 </button>
-            </a>
-            <a href="{% url 'mainapp:contact' %}" style="text-decoration: none;">
-                <button class="getintouch-button">
-                    <span class="getintouch-text">{% trans "Get in touch - it's free" %}</span>
+                <button class="btn btn-primary" style="background-color: #014f42;border:none;" type="button">
+                    <a href="{% url 'mainapp:contact' %}"></a>
+                        <span style="font-size:14px;line-height: 20px;font-weight: bold;">{% trans "Get in touch - it's free" %}</span>
+                    </a>
                 </button>
-            </a>
+            </div>
             <!-- <li class="nav-item">
                 {% get_current_language as LANGUAGE_CODE %}
                 <form class="d-flex" action="{% url 'set_language' %}" method="post">

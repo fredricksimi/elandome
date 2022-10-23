@@ -438,9 +438,11 @@
                         <p class="text-center" style="font-weight:bold">Or</p>
                         <p class="pt-1 text-center">{% trans "Get in touch with us. Our team is happy to help you to answer any questions you may have." %}</p>
                         <center>
-                            <button class="about-us-bottom-button" style="background-color: #014f42;">
-                                <span class="about-us-bottom-button-text" style="color:white;font-weight:bold;">{% trans "Contact Us" %}</span>
-                            </button>
+                            <a href="{% url 'mainapp:contact' %}">
+                                <button class="about-us-bottom-button" style="background-color: #014f42;">
+                                    <span class="about-us-bottom-button-text" style="color:white;font-weight:bold;">{% trans "Contact Us" %}</span>
+                                </button>
+                            </a>
                         </center>
                         <br>
                     </div>
@@ -466,9 +468,11 @@
                         <p class="pt-1 text-center">{% trans "Get in touch with us. Our team is happy to help you to" %} <br>{% trans "answer any questions you may have." %}</p>
                         <br>
                         <center>
-                            <button class="about-us-bottom-button" style="background-color: #014f42;">
-                                <span class="about-us-bottom-button-text" style="color:white;font-weight:bold;">{% trans "Contact Us" %}</span>
-                            </button>
+                            <a href="{% url 'mainapp:contact' %}">
+                                <button class="about-us-bottom-button" style="background-color: #014f42;">
+                                    <span class="about-us-bottom-button-text" style="color:white;font-weight:bold;">{% trans "Contact Us" %}</span>
+                                </button>
+                            </a>
                         </center>
                     </div>
                 </div>
