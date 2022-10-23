@@ -26,7 +26,7 @@ TRAVEL_PACKS = (
 
 PACKAGES = (
     ('- Select -','- Select -'),
-    ('Family', 'Family'),
+    ('Families', 'Families'),
     ('Friends', 'Friends'),
     ('Students', 'Students'),
     ('Employees', 'Employees'),
