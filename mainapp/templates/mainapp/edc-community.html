@@ -46,8 +46,8 @@
             </p>
         </div>
     </div>
-
-    <div class="row pt-3">
+    <center><hr width="100%" style="border: 1px solid #cc3e18;"></center>
+    <div class="row pt-5">
         <div class="col-md-4">
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center align-items-center">
@@ -56,9 +56,16 @@
             </div>
             <p class="text-center pt-2" style="font-size:22px;color:#014f42;line-height:30px;font-weight:bold;">{% trans "Employees" %}</p>
             <!-- <center><hr width="40%" style="border:2px solid #CC3E18; height:2px; border-color:#CC3E18 !important;"></center> -->
-            <p class="text-center">
+            <!-- <p class="text-center">
                 {% blocktrans %}Our employee program is a planned and managed initiative that seeks to motivate and enable employees to effectively meet organizational needs, 
                 boost productivity, increase employee engagement and enhance employee retention through the leadership of the employer.{% endblocktrans %}
+            </p> -->
+            <p class="text-center">
+                {% blocktrans %}
+                Our employee program is a planned and managed initiative that seeks to motivate and enable employees to develop 
+                design thinking skills, increase employee engagement in problem solving and enhance employee retention through 
+                self leadership.
+                {% endblocktrans %}
             </p>
         </div>
         <div class="col-md-4">
@@ -89,13 +96,13 @@
     </div>
     <div class="pt-5">
         <h2 class="text-center pb-3 missionvisiontext" style="color:#000;">Be a part of our community</h2><br>
-        <p class="text-center">Interested in joining our community as a volunteer, mentor or a partner?</p>
-        <p class="text-center">Drop us an email at info@elandome.org, we will send you more information and guide you through your  journey with<br> ELAN Dome Consultants.</p>
+        <p class="text-center">Are you interested in joining our community as a volunteer, mentor or a partner?</p>
+        <p class="text-center">Drop us an email at <a href="mailto:info@elandome.org">info@elandome.org</a>, we will send you more information and guide you through your  journey with<br> ELAN Dome Consultants.</p>
         <br><br>
         <p class="text-center">
             <a href="{% url 'mainapp:application-form' %}">
                 <button class="signin-button" style="padding: 8px 30px;">
-                    <span class="signin-text" style="font-weight: bold;">Join Us</span>
+                    <span class="signin-text" style="font-weight: bold;">Sign up today</span>
                 </button>
             </a>
         </p>

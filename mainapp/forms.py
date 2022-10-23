@@ -1,6 +1,6 @@
 from django import forms
 from crispy_forms.helper import FormHelper
-from .models import ContactPage, VolunteerApplication, COUNTRIES, GENDER, TRAVEL_PACKS, HOW_DID_YOU_HEAR_ABOUT_US, PROGRAMS, PACKAGES
+from .models import ContactPage, VolunteerApplication, COUNTRIES, GENDER, TRAVEL_PAX, HOW_DID_YOU_HEAR_ABOUT_US, PROGRAMS, PACKAGES
 
 class ContactPageForm(forms.ModelForm):
     full_name = forms.CharField(widget=forms.TextInput(attrs={"placeholder":"Full name", "class":"form-control", "aria-label":"Full name"}))
@@ -36,7 +36,7 @@ class VolunteerApplicationForm(forms.ModelForm):
     health_conditions_disabilities = forms.CharField(widget=forms.Textarea(attrs={"class":"form-control", "rows":"3", "placeholder":"Health conditions, disabilities etc."}))
     preferred_program = forms.ChoiceField(choices=PROGRAMS, widget=forms.Select(attrs={"class":"form-control", "placeholder":"Preferred Program"}))
     personalized_preferrences = forms.CharField(widget=forms.Textarea(attrs={"placeholder":"Type here...", "rows":"3"}))
-    travel_pack = forms.ChoiceField(choices=TRAVEL_PACKS, widget=forms.Select(attrs={"class":"form-control"}))
+    travel_pack = forms.ChoiceField(choices=TRAVEL_PAX, widget=forms.Select(attrs={"class":"form-control"}))
     preferred_package = forms.ChoiceField(choices=PACKAGES, widget=forms.Select(attrs={"class":"form-control"}))
     duration_of_stay = forms.CharField(widget=forms.TextInput(attrs={"placeholder":"Duration of stay", "class":"form-control"}))
     preferred_city =forms.CharField(widget=forms.TextInput(attrs={"class":"form-control", "placeholder":"Preferred city"}))
