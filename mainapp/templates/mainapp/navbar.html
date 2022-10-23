@@ -40,16 +40,16 @@
                 </li>
             </ul>
             <div class="d-grid gap-2 d-md-block">
-                <button class="btn btn-primary" style="background-color: #cc3e18;border:none;" type="button">
-                    <a href="{% url 'mainapp:application-form' %}"></a>
+                <a class="d-grid d-md-block" href="{% url 'mainapp:application-form' %}" style="text-decoration: none;color:#fff;">
+                    <button class="btn btn-primary" style="background-color: #cc3e18;border:none;" type="button">
                         <span style="font-size:14px;line-height: 20px;font-weight:bold">{% trans "Join Us" %}</span>
-                    </a>
-                </button>
-                <button class="btn btn-primary" style="background-color: #014f42;border:none;" type="button">
-                    <a href="{% url 'mainapp:contact' %}"></a>
+                    </button>
+                </a>
+                <a class="d-grid d-md-block" href="{% url 'mainapp:contact' %}" style="text-decoration: none;color:#fff;">
+                    <button class="btn btn-primary" style="background-color: #014f42;border:none;" type="button">
                         <span style="font-size:14px;line-height: 20px;font-weight: bold;">{% trans "Get in touch - it's free" %}</span>
-                    </a>
-                </button>
+                    </button>
+                </a>
             </div>
             <!-- <li class="nav-item">
                 {% get_current_language as LANGUAGE_CODE %}
