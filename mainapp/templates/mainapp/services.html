@@ -299,23 +299,50 @@ html,body
                 </p>
             </div>
         </div>
-        <div class="row pt-3">
-            <div class="col-md-7">
-                <p class="text-center programs-text pt-4">Project Management</p>
-                <p class="pt-3">
-                    {% blocktrans %}We are the  first choice custodians of your projects and resources on ground. We source for quality and competitive resource plans, quotations, unique development 
-                    plans and bespoke designs that are fairly priced and work with reputable excerpts to execute your vision and deliver beyond the expected outcomes.{% endblocktrans %}
-                </p>
-                <p>
-                    {% blocktrans %}Our areas of focus include: research, digitization, real estate & construction, corporate events (workshops and employee development programs), 
-                    budgeting exercises and project fundraising initiatives.{% endblocktrans %}
-                </p>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-                <img src="{% static 'images/home-project-management.png' %}" alt="portfolio image" class="img-fluid">
+        <!-- Desktop View -->
+        <div class="d-none d-sm-block">
+            <div class="row pt-3">
+                <div class="col-md-7">
+                    <p class="text-center programs-text pt-4">Project Management</p>
+                    <p class="pt-3">
+                        {% blocktrans %}We are the  first choice custodians of your projects and resources on ground. We source for quality and competitive resource plans, quotations, unique development 
+                        plans and bespoke designs that are fairly priced and work with reputable excerpts to execute your vision and deliver beyond the expected outcomes.{% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}Our areas of focus include: research, digitization, real estate & construction, corporate events (workshops and employee development programs), 
+                        budgeting exercises and project fundraising initiatives.{% endblocktrans %}
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/home-project-management.png' %}" alt="portfolio image" class="img-fluid">
+                </div>
             </div>
         </div>
+        <!-- End of Desktop View -->
+
+        <!-- Mobile View -->
+        <div class="d-block d-sm-none">
+            <div class="row pt-3">
+                <div class="col-md-4">
+                    <img src="{% static 'images/home-project-management.png' %}" alt="portfolio image" class="img-fluid">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <p class="text-center programs-text pt-4">Project Management</p>
+                    <p class="pt-3">
+                        {% blocktrans %}We are the  first choice custodians of your projects and resources on ground. We source for quality and competitive resource plans, quotations, unique development 
+                        plans and bespoke designs that are fairly priced and work with reputable excerpts to execute your vision and deliver beyond the expected outcomes.{% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}Our areas of focus include: research, digitization, real estate & construction, corporate events (workshops and employee development programs), 
+                        budgeting exercises and project fundraising initiatives.{% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile View -->
+
         <div class="row pt-3">
             <div class="col-md-4">
                 <img src="{% static 'images/home-career-counselling.png' %}" alt="portfolio image" class="img-fluid">
