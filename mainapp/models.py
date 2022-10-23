@@ -12,7 +12,7 @@ GENDER = (
 PROGRAMS = (
     ('- Select -','- Select -'),
     ('Volunteer Services','Volunteer Services'),
-    ('Strategic Planning, Coordination & Monitoring', 'Strategic Planning, Coordination & Monitoring'),
+    ('Investment supervision, coordination and implementation', 'Investment supervision, coordination and implementation'),
     ('Project Management', 'Project Management'),
     ('Workshops & Training', 'Workshops & Training'),
     ('Career Counselling', 'Career Counselling')
@@ -73,7 +73,7 @@ class VolunteerApplication(models.Model):
     nationality = models.CharField(max_length=50)
     education_or_experience = models.TextField()
     health_conditions_disabilities = models.TextField()
-    preferred_program = models.CharField(max_length=50, choices=PROGRAMS)
+    preferred_program = models.CharField(max_length=150, choices=PROGRAMS)
     personalized_preferrences = models.TextField()
     travel_pack = models.CharField(max_length=50, choices=TRAVEL_PACKS)
     preferred_package = models.CharField(max_length=50, choices=PACKAGES)
