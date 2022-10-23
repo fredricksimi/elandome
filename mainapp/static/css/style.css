@@ -121,6 +121,29 @@ header .overlay {
     opacity: 0.5;
     z-index: 1;
 }
+.wewithyou {
+    font-size:100px;
+    line-height:120px;
+    font-weight: 500;
+    color:white;
+}
+.withyourow{
+    padding-top:56px;
+}
+
+.accountabilitytext{
+    font-size:60px;
+    line-height:80px;
+    font-weight: 500;
+}
+
+.missionvisiontext{
+    color:#000;
+    font-weight:bold;
+    font-size:40px;
+    line-height:48px;
+}
+
 
 /* About Page */
 
@@ -502,3 +525,73 @@ color: #014F42;
     line-height:24px;
 }
 /* ----- End of Contact Page ---- */
+
+/* Extra small viewport or screen */
+@media (min-width: 280px) and (max-width: 480px) {
+    .wewithyou {
+        font-size:50px;
+        line-height:70px;
+        font-weight: 500;
+        color:white;
+    }
+    .wewithyouimg {
+        width:70px;
+        height:70px;
+    }
+    .withyourow{
+        padding-top:20px;
+    }
+    .accountabilitytext{
+        text-align: center;
+        font-size:40px;
+        line-height:50px;
+        font-weight: 500;
+    }
+    .about-banner-text2{
+        padding-top:40px;
+        padding-bottom: 25px;
+    }
+    .aboutelandome{
+        font-size:calc(1.375rem + 1.5vw);
+        line-height: 1.2;
+    }
+    .missionvisiontext{
+        font-size:calc(1.375rem + 1.5vw);
+        line-height: 1.2;
+        text-align: center;
+    }
+    .missionvisiondescription{
+        text-align: center;
+    }
+    .our{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #01463B;
+        padding-top:40px;
+    }
+    .process{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 78px;
+        color: #CC3E18;
+    }
+    .process-desc {
+        padding-top: 20px;
+    }
+}
+@media only screen and (min-width : 480px) {
+
+}
+/* Small viewport or screen */
+@media only screen and (min-width : 768px) {
+
+}
+/* Medium viewport or screen */
+@media only screen and (min-width : 992px) {
+
+}

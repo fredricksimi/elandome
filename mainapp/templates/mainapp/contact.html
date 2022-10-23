@@ -12,11 +12,11 @@
                 {% csrf_token %}
                 <div class="contact-us-form-div p-5">
                     <div class="row pt-4 pb-2">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">{% trans "FULL NAME" %}</label>
                             {{form.full_name|as_crispy_field}}
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">{% trans "EMAIL" %}</label>
                             {{form.email|as_crispy_field}}
                         </div>

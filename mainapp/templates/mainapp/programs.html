@@ -64,7 +64,27 @@
         </center>
         <br>
     </div>
-    <div class="row d-flex align-items-center pt-5">
+    <!-- Mobile View -->
+    <div class="row d-flex align-items-center pt-5 d-block d-sm-none">
+        <div class="col-md-5">
+            <div class="d-flex justify-content-center">
+                <img src="{% static 'images/programs-supervision.jpeg' %}" class="img-fluid" alt="programs image">
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <p class="text-center programs-text pt-2">{% trans "Investment supervision, coordination and implementation" %}</p>
+            <p>
+                {% blocktrans %}We help you to build action oriented strategic plans, communication, business development, marketing 
+                and partnership strategies, internal policies and customer experience needs in the following industry 
+                categories and sectors : SMEs, FMCG, Consulting firms, INGOs, not for profit organizations including 
+                CBOs, CSOs, FBOs, civil societies, government, academic institutions and individuals.{% endblocktrans %}
+            </p>
+        </div>
+    </div>
+    <!-- End of Mobile View -->
+    <!-- Desktop View -->
+    <div class="row d-flex align-items-center pt-5 d-none d-sm-block">
         <div class="col-md-6">
             <p class="text-center programs-text pt-2">{% trans "Investment supervision, coordination and implementation" %}</p>
             <p>
@@ -80,8 +100,8 @@
                 <img src="{% static 'images/programs-supervision.jpeg' %}" class="img-fluid" alt="programs image">
             </div>
         </div>
-        
     </div>
+    <!-- End of Desktop View -->
     <div class="row d-flex align-items-center pt-5">
         <div class="col-md-5">
             <div class="d-flex justify-content-center">
@@ -122,7 +142,14 @@
             </p> -->
         </div>
     </div>
-    <div class="row d-flex align-items-center pt-5">
+    <!-- Mobile View -->
+    <div class="row d-flex align-items-center pt-5 d-block d-sm-none">
+        <div class="col-md-5">
+            <div class="d-flex justify-content-center">
+                <img src="{% static 'images/programs-workshops-training.jpeg' %}" class="img-fluid" alt="programs image">
+            </div>
+        </div>
+        <div class="col-md-1"></div>
         <div class="col-md-6">
             <p class="text-center programs-text pt-2">{% trans "Workshops & Training" %}</p>
             <p>
@@ -142,14 +169,31 @@
                 departments.
                 {% endblocktrans %}
             </p>
-            <!-- <p>
-                {% blocktrans %}We design, recruit, facilitate, assess, tailormake and report on extra ordinary workshops, team building  
-                and training initiatives for teams and organizations. Our primary focus is on{% endblocktrans %}:
-                <br><br>
-                <span style="font-weight:bold">a.</span> {% trans "Management i.e crisis management, change management, conflict management and overall team management." %}<br><br>
-                <span style="font-weight:bold">b.</span> {% blocktrans %}Leadership i.e adaptable leadership, progressive organization culture, next level leadership, performance 
-                (financial & operational) and decision making analysis & design){% endblocktrans %}
-            </p> -->
+        </div>
+    </div>
+    <!-- End of Mobile View -->
+
+    <!-- Desktop View -->
+    <div class="row d-flex align-items-center pt-5 d-none d-sm-block">
+        <div class="col-md-6">
+            <p class="text-center programs-text pt-2">{% trans "Workshops & Training" %}</p>
+            <p>
+                {% blocktrans %}
+                Workshops provide an avenue to explore current topics, hands-on training, and practical application.
+                ELAN Done offers a wide array of interactive and dynamic workshops and training sessions that
+                can be easily customized to suit different individuals, groups and organizations. (Corporate
+                Organizations, Educational Institutions, NGOs, CBOs etc)
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                These workshops and training sessions focus on respective areas as requested by our clients.
+                They range from personal development areas to professional improvement areas like
+                leadership training and change management. They are particularly very beneficial to
+                organizations that would like to optimize their manpower and create unison within different
+                departments.
+                {% endblocktrans %}
+            </p>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-5">
@@ -158,6 +202,7 @@
             </div>
         </div>
     </div>
+    <!-- End of Desktop View -->
     <div class="row d-flex align-items-center pt-5">
         <div class="col-md-5">
             <div class="d-flex justify-content-center">
