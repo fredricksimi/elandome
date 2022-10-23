@@ -49,7 +49,7 @@ def services_view(request):
     context = {'active':active}
     return render(request, 'mainapp/services.html', context)
 
-def volunteer_application_view(request):
+def application_view(request):
     if request.method == 'POST':
         form = VolunteerApplicationForm(request.POST or None)
         if form.is_valid():
@@ -61,4 +61,4 @@ def volunteer_application_view(request):
         'active':active,
         'form':form
     }
-    return render(request, 'mainapp/volunteer-application.html', context)
+    return render(request, 'mainapp/application-form.html', context)

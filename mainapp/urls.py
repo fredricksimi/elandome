@@ -11,5 +11,5 @@ urlpatterns = [
     path('programs', views.programs_view, name='programs'),
     path('edc-community', views.edc_community_view, name='edc-community'),
     path('services', views.services_view, name='services'),
-    path('volunteer-application', views.volunteer_application_view, name='volunteer-application'),
+    path('apply', views.application_view, name='application-form'),
 ]
