@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .forms import ContactPageForm, VolunteerApplicationForm
 from datetime import datetime, timezone
 from django.utils.translation import gettext as _
@@ -54,6 +54,8 @@ def application_view(request):
         form = VolunteerApplicationForm(request.POST or None)
         if form.is_valid():
             form.save()
+            redirect('mainapp:application-form')
+            form=VolunteerApplicationForm()
     else:
         form = VolunteerApplicationForm()
     active = 'active'

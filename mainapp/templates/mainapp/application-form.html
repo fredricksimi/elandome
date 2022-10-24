@@ -37,8 +37,18 @@
 </script>
 <div style="background:url('../../static/images/sandra-back7.jpeg');background-repeat:repeat;">
 <p class="portfolio-page-title">Fill the form below</p>
+<p class="text-center pb-4" style="font-weight:bold;color:#014f42;">Your names should match as they are in your passport</p>
+<div class="container">
+    <div class="col-md-7 mx-auto">
+        <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+        </div>
+    </div>
+</div>
+
 <div class="container">
     <form action="" method="post">
+        {% csrf_token %}
         <div class="row">
             <div class="col-md-4">
                 <label for="First Name" class="form-label">First Name</label>
